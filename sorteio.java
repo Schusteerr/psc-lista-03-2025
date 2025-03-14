@@ -7,8 +7,6 @@ public class sorteio {
 
         Scanner scanner = new Scanner(System.in);
 
-
-
         System.out.println("Insira dois numeros para gerar um numero aleatorio:");
 
         for (int i = 0; i < 2; i++) {

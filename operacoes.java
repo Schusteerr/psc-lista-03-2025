@@ -11,7 +11,7 @@ public class operacoes{
         System.out.println("Digite outro numero real");
         double nmrDois = scanner.nextDouble();
 
-        System.out.print("Escolha sua operação matemática para os numeor, sendo as opções: \n'+' para calcular soma \n'-' para calcular subtração \n'*' para calcular multiplicação \n'/' para calcular divisão \n'^' para calcular divisão");
+        System.out.print("Escolha sua operação matemática para os numero, sendo as opções: \n'+' para calcular soma \n'-' para calcular subtração \n'*' para calcular multiplicação \n'/' para calcular divisão \n'^' para calcular divisão");
         String indicador = scanner.next();
 
         switch (indicador) {
@@ -26,19 +26,19 @@ public class operacoes{
                 System.out.printf("A substração dos dois números é: %.2f", sub);
             }
             case "*" -> {
-                double mult = nmrUm-nmrDois;
+                double mult = nmrUm*nmrDois;
 
                 System.out.printf("A multiplicação dos dois números é: %.2f", mult);
             }
             case "/" -> {
-                double div = nmrUm-nmrDois;
+                double div = nmrUm/nmrDois;
 
-                System.out.printf("A divisão dos dois números é: %.2f", div);
+                System.out.printf("A divisão do primeiro pelo segundo numero é: %.2f", div);
             }
             case "^" ->{
                 double pot = Math.pow(nmrUm,nmrDois);
 
-                System.out.printf("A divisão dos dois números é: %.2f", pot);
+                System.out.printf("A potenciação do primeiro pelo segundo numero é: %.2f", pot);
             }
 
             default -> System.out.println("o indicador para a operação atual é inválido");
