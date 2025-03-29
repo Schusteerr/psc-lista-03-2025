@@ -7,11 +7,9 @@ public class arraynumeros {
 
         Scanner scanner = new Scanner(System.in);
 
-
-
-        System.out.println("Insira tres numeros:");
-
         for (int i = 0; i < 3; i++) {
+
+            System.out.printf("Insira o %d° numero: ", i+1);
 
             numeros[i] = scanner.nextInt();
         }
